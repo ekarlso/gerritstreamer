@@ -1,0 +1,8 @@
+Babel
+eventlet
+iso8601
+oslo.config
+pbr
+pygerrit
+six
+stevedore
