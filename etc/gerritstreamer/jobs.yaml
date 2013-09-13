@@ -1,0 +1,20 @@
+---
+myproject:
+  post:
+    - jobWithNoOptions
+    -
+      name: jobWithOptions
+      params:
+        myParam: 1
+
+team/myproject:
+  post:
+    - jobWithNoOptions
+    -
+      name: jobWithOptions
+      params:
+        myParam: 1
+  check:
+    - jobWithNoOptions
+  gate:
+    - jobWithNoOptions

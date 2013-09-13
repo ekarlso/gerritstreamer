@@ -4,5 +4,7 @@ iso8601
 oslo.config
 pbr
 pygerrit
+python-jenkins
 six
 stevedore
+PyYAML

@@ -31,7 +31,7 @@ class EventStreamService(service.Service):
         LOG.debug('Stopping eventstream')
 
     def load_extenstions(self):
-        self.manager = DispatchExtensionManager('gevstream.subscribers', lambda i: True)
+        self.manager = DispatchExtensionManager('gerritstreamer.subscribers', lambda i: True)
 
     @staticmethod
     def filter_extension(ext, event):
