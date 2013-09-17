@@ -130,7 +130,7 @@ class JenkinsGerritTrigger(Subscriber):
         # NOTE: Lookup jobs and return if no jobs
         jobs = self._get_jobs(event.change.project, action)
         if not jobs:
-            LOG.debug('No jobs for %s/%s' % (event.change.project, action))
+            LOG.debug('No jobs for %s - %s' % (event.change.project, action))
             return
 
         params = {
