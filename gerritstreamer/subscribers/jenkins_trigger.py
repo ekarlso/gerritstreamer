@@ -101,7 +101,7 @@ class JenkinsGerritTrigger(Subscriber):
             raise InvalidJob
 
     def _params_ssh(self):
-        d = dict([('GERRIT_%s' % k.upper(), v) for k, v in SSH_CONFIG.items()])
+        d = dict([('GERRIT_%s' % k.upper(), v) for k, v in GERRIT_CONFIG.items()])
         d['GERRIT_PROTO'] = 'ssh'
         return d
 
