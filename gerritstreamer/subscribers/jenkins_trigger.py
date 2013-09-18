@@ -18,9 +18,6 @@ from gerritstreamer.openstack.common import log
 from gerritstreamer.subscribers.base import Subscriber
 from gerritstreamer.common import ssh
 
-import ipdb
-
-
 LOG = log.getLogger(__name__)
 
 
